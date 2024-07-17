@@ -1,0 +1,119 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background: url('https://th.bing.com/th/id/OIP.0MhZkPMvHoUokWSFPv9AnQHaFj?rs=1&pid=ImgDetMain') no-repeat center center/cover;
+    padding: 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+}
+
+.background-fade {
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(255, 0, 0, 0.8);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(0, 255, 0, 0.8);
+}
+
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff0000; 
+}
+
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:active {
+    animation: click-animation 0.2s ease-in-out;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.rotate img {
+    animation: rotate 5s linear infinite;
+}
